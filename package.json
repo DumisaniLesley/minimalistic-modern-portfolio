@@ -1,0 +1,22 @@
+{
+  "name": "minimalistic-modern-portfolio",
+  "version": "1.0.0",
+  "description": "Responsive Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kondwanihm/minimalistic-modern-portfolio.git"
+  },
+  "author": "Kondwani Munkondia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kondwanihm/minimalistic-modern-portfolio/issues"
+  },
+  "homepage": "https://github.com/Kondwanihm/minimalistic-modern-portfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
