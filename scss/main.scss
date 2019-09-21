@@ -1,6 +1,10 @@
 $primary-color: #444444;
 $secondary-color: #eece1a;
 
+@mixin easeOut {
+    transition: all 0.5s ease-out;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -28,7 +32,7 @@ h3 {
     &.sm-heading {
         margin-bottom: 2rem;
         padding: 0.2rem 1rem;
-        background: rgba(lighten($primary-color , 2) , 0.5);
+        background: rgba(lighten($primary-color, 2), 0.5);
     }
 }
 
@@ -37,27 +41,35 @@ a {
     text-decoration: none;
 }
 
-header{
+header {
     position: fixed;
     z-index: 2;
     width: 100%;
 }
 
-.text-secondary{
+.text-secondary {
     color: $secondary-color;
 }
 
-main{
+main {
     padding: 4rem;
     height: 100%;
 
-    .icons{
+    .icons {
         margin-top: 1rem;
 
-        a{
+        a {
             padding: 0.4rem;
 
-            &:hover{
+            &:hover {
                 color: $secondary-color;
+                @include easeOut();
             }
         }
+    }
+
+    &#home {
+
+        overflow: hidden;
+    }
+}
