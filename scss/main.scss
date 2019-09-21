@@ -1,5 +1,5 @@
 $primary-color: #444444;
-$secondary-color: #ffb900;
+$secondary-color: #eece1a;
 
 * {
     box-sizing: border-box;
@@ -7,6 +7,59 @@ $secondary-color: #ffb900;
 
 body {
     background: $primary-color;
-    color:#fff;
+    color: #fff;
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
 }
 
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-weight: 500;
+
+    &.lg-heading {
+        font-size: 6rem;
+    }
+
+    &.sm-heading {
+        margin-bottom: 2rem;
+        padding: 0.2rem 1rem;
+        background: rgba(lighten($primary-color , 2) , 0.5);
+    }
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+.text-secondary{
+    color: $secondary-color;
+}
+
+main{
+    padding: 4rem;
+    height: 100%;
+
+    .icons{
+        margin-top: 1rem;
+
+        a{
+            padding: 0.4rem;
+
+            &:hover{
+                color: $secondary-color;
+            }
+        }
+    }
+}
